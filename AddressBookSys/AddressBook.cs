@@ -65,6 +65,18 @@ namespace Address_Book_System
             while (personNum > 0)
             {
                 Contacts person = new Contacts();
+            firstName:
+                Console.WriteLine("Enter your First name");
+                string firstName = Console.ReadLine();
+                if (NameDuplicationCheck(addressBookName, firstName))
+                {
+                    person.firstName = firstName;
+                }
+                else
+                {
+                    Console.WriteLine("The name {0} already  exist in the current address book. please enter a new name", firstName);
+                    goto firstName;
+                }
 
                 Console.WriteLine("Enter your First name");
                 person.firstName = Console.ReadLine();
@@ -90,6 +102,37 @@ namespace Address_Book_System
             }
         }
 
+        public static bool NameDuplicationCheck(string addressBookName, string firstName)
+        {
+            int flag = 0;
+            if (mySystem[addressBookName].Count > 0)
+            {
+                foreach (Contacts contact in mySystem[addressBookName])
+                {
+                    if (!(contact.firstName == firstName))
+                    {
+                        flag = 1;
+                    }
+                    else
+                    {
+                        flag = 0;
+                        break;
+                    }
+                }
+            }
+            else
+            {
+                return true;
+            }
+            if (flag == 1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
 
         public static void ContactsDisplay()
         {
