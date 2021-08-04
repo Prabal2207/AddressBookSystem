@@ -1,0 +1,12 @@
+/Users/prabalrai/Projects/AddressBookSys/AddressBookSys/bin/Debug/netcoreapp3.1/AddressBookSys.deps.json
+/Users/prabalrai/Projects/AddressBookSys/AddressBookSys/bin/Debug/netcoreapp3.1/AddressBookSys.runtimeconfig.json
+/Users/prabalrai/Projects/AddressBookSys/AddressBookSys/bin/Debug/netcoreapp3.1/AddressBookSys.runtimeconfig.dev.json
+/Users/prabalrai/Projects/AddressBookSys/AddressBookSys/bin/Debug/netcoreapp3.1/AddressBookSys.dll
+/Users/prabalrai/Projects/AddressBookSys/AddressBookSys/bin/Debug/netcoreapp3.1/AddressBookSys.pdb
+/Users/prabalrai/Projects/AddressBookSys/AddressBookSys/obj/Debug/netcoreapp3.1/AddressBookSys.csproj.AssemblyReference.cache
+/Users/prabalrai/Projects/AddressBookSys/AddressBookSys/obj/Debug/netcoreapp3.1/AddressBookSys.AssemblyInfoInputs.cache
+/Users/prabalrai/Projects/AddressBookSys/AddressBookSys/obj/Debug/netcoreapp3.1/AddressBookSys.AssemblyInfo.cs
+/Users/prabalrai/Projects/AddressBookSys/AddressBookSys/obj/Debug/netcoreapp3.1/AddressBookSys.csproj.CoreCompileInputs.cache
+/Users/prabalrai/Projects/AddressBookSys/AddressBookSys/obj/Debug/netcoreapp3.1/AddressBookSys.dll
+/Users/prabalrai/Projects/AddressBookSys/AddressBookSys/obj/Debug/netcoreapp3.1/AddressBookSys.pdb
+/Users/prabalrai/Projects/AddressBookSys/AddressBookSys/obj/Debug/netcoreapp3.1/AddressBookSys.genruntimeconfig.cache
