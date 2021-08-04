@@ -8,7 +8,7 @@ namespace Address_Book_System
         {
             Console.WriteLine("Welcome to Address Book System");
 
-            AddressBook.AddContact();
+            AddressBook.addAddressBook();
             Console.WriteLine("\n");
             AddressBook.ContactsDisplay();
             Console.WriteLine("\n");
@@ -16,7 +16,9 @@ namespace Address_Book_System
             Console.WriteLine("\n");
             AddressBook.ContactsDisplay();
             Console.WriteLine("\n");
-            AddressBook.DeleteContact();
+            AddressBook.ContactsDisplay();
+            AddressBook.ContactsDisplay();
+            AddressBook.ContactsDisplay();
             AddressBook.ContactsDisplay();
         }
     }

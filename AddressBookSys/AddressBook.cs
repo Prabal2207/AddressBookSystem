@@ -6,8 +6,59 @@ namespace Address_Book_System
 {
     class AddressBook
     {
-        public static List<Contacts> addressBook = new List<Contacts>();
-        public static void AddContact()
+
+        public static Dictionary<string, List<Contacts>> mySystem = new Dictionary<string, List<Contacts>>();
+        public static List<Contacts> addressBook;
+
+        public static void addAddressBook()
+        {
+            int count = 2;
+            while (count > 0)
+            {
+                Console.WriteLine("Do you want to add the contact in the existing addressbook or new addressbook\n Enter the number accordingly\n 1. New addressbook\n 2. Existing addressbook");
+                int key = Convert.ToInt32(Console.ReadLine());
+                if (key == 1)
+                {
+                    AddressBookNewNameValidator();
+                }
+                else if (key == 2)
+                {
+                    AddressBookExistingNameValidator();
+                }
+                count--;
+            }
+        }
+
+        public static void AddressBookNewNameValidator()
+        {
+            Console.WriteLine("Enter the new addressbook name\n");
+            string addressBookName = Console.ReadLine();
+            if (mySystem.ContainsKey(addressBookName))
+            {
+                Console.WriteLine("Please enter a new addressbook name. The name entered already exist");
+                AddressBookNewNameValidator();
+            }
+            else
+            {
+                mySystem[addressBookName] = new List<Contacts>();
+                AddContact(addressBookName);
+            }
+        }
+        public static void AddressBookExistingNameValidator()
+        {
+            Console.WriteLine("Enter the Existing addressbook name\n");
+            string addressBookName = Console.ReadLine();
+            if (!mySystem.ContainsKey(addressBookName))
+            {
+                Console.WriteLine("Please enter a new addressbook name. The name entered already exist");
+                AddressBookExistingNameValidator();
+            }
+            else
+            {
+                AddContact(addressBookName);
+            }
+        }
+        public static void AddContact(string addressBookName)
         {
             Console.WriteLine("How many person's contact details do you want to add?");
             int personNum = Convert.ToInt32(Console.ReadLine());
