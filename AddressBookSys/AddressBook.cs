@@ -19,12 +19,12 @@ namespace Address_Book_System
                 int key = Convert.ToInt32(Console.ReadLine());
                 if (key == 1)
                 {
-                    AddressBookNewNameValidator();
+                     AddressBookNewNameValidator();
                     count--;
                 }
                 else if (key == 2)
                 {
-                    AddressBookExistingNameValidator();
+                      AddressBookExistingNameValidator();
                 }
             }
         }
